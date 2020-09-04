@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
-import useStorage from '../hooks/useStorage';
+import React, { useEffect, useContext } from 'react';
+import useStorage from '../../hooks/useStorage';
 import { motion } from 'framer-motion';
+import './Progress.css'
+import { userContext } from '../../context/UserProvider';
 
 const ProgressBar = ({file, setFile}) => {
-    
-    const { url, progress } = useStorage(file);
+
+    const user = useContext(userContext);
+    const { url, progress } = useStorage(file, user.uid);
     
     useEffect(() => {
         if(url) {

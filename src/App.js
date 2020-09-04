@@ -1,20 +1,34 @@
-import React, { useState } from 'react';
-import Title from './comps/Title';
-import UploadForm from './comps/UploadForm';
-import ImageGrid from './comps/ImageGrid';
-import Modal from './comps/Modal';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+//Providers
+
+// Components
+import Profile from './components/Profile/Profile';
+import Navbar from './components/Navbar/Navbar';
+import Login from './components/auth/Login';
+import Logout from './components/auth/Logout';
+import Signup from './components/auth/Signup';
+import Home from './components/Home/Home';
+import UserProvider from './context/UserProvider';
+
+
 
 function App() {
 
-  const [selectedImage, setSelectedImage] = useState(null)
 
   return (
-    <div className="App">
-      <Title/>
-      <UploadForm />
-      <ImageGrid setSelectedImage={ setSelectedImage } />
-      { selectedImage && <Modal selectedImage= { selectedImage } setSelectedImage= { setSelectedImage }/>}
-    </div>
+    <Router>
+      <UserProvider>
+        <Navbar />
+        <Route exact path="/logout" component={ Logout } />
+        <Route exact path="/login" component={ Login }/>
+        <Route exact path="/signup" component={ Signup }/>
+        <Route exact path="/profile" component={ Profile }/>
+        <Route path="/home" component={ Home } />
+      </UserProvider>
+
+    </Router>
   );
 }
 

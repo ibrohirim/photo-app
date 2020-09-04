@@ -1,0 +1,81 @@
+
+.auth-wrap {
+    margin: 20vh auto;
+    max-width: 600px;
+    padding: 1rem;
+}
+
+.auth-wrap > form {
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.auth-wrap > form > label {
+    margin-bottom: 0.6rem;
+}
+
+.auth-wrap > form > input {
+    border: 1px solid var(--secondary);
+    padding: 0.8rem;
+    margin-bottom: 0.6rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: medium;
+}
+
+.auth-wrap > form > input:focus {
+    border: 1px solid var(--primary);
+}
+
+.auth-wrap > form > span {
+    color: var(--primary);
+    font-size: x-large;
+    margin: 1rem auto;
+}
+
+.button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    font-family: "Noto Serif";
+    font-weight: 800;
+    font-size: medium;
+    justify-self: center;
+    margin: 0.8rem 0;
+    width: 45%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: black;
+}
+
+.button-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.button-secondary {
+    background-color: var(--secondary-dark);
+    border: 1px solid var(--secondary-dark);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    background-color: #2F4858;
+    border-color: #2F4858;
+    cursor: pointer;
+    color: white;
+    transition: background-color 275ms ease-in-out;
+}
+
+.error { 
+    color: var(--error);
+    margin: 0 auto;
+    padding: 1rem;
+}
