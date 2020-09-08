@@ -5,7 +5,7 @@ const useFirestore = (collection, userId) => {
     const [docs, setDocs] = useState([]);
 
     useEffect(() => {
-        const unsub = projectFirestore.collection(collection).doc(userId).collection('userImages')
+        const unsub = projectFirestore.collection(collection).where('createdBy', '==', userId)
         .orderBy('createdAt', 'desc')
         .onSnapshot((snap) => {
             let documents = [];

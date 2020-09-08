@@ -7,7 +7,7 @@ import { userContext } from '../../context/UserProvider';
 const ImageGrid = ({ setSelectedImage }) => {
 
     const user = useContext(userContext);
-    const { docs } = useFirestore('users', user.uid);
+    const { docs } = useFirestore('images', user.uid);
 
     return (
         <div className="img-grid">
