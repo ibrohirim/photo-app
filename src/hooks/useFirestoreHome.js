@@ -9,7 +9,6 @@ const useFirestoreHome = (collection) => {
         const unsub = projectFirestore.collection(collection).orderBy('createdAt', 'desc')
         .onSnapshot(snap => {
             let documents = [];
-            console.log(snap.query);
             snap.forEach(doc => {
                 documents.push({...doc.data(), id: doc.id});
             });
