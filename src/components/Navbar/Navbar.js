@@ -10,7 +10,7 @@ const Navbar = () => {
     return(
         <div className="nav-wrap">
             <nav className="nav-bar">
-                <span className="logo"><Link to="/home">Photo App</Link></span>
+                <span className="logo"><Link to="/">Photo App</Link></span>
                 <span className="spacer"></span>
                 <ul>
                     { user && <li className="nav-link"><Link to="/logout">Log out</Link></li>}
