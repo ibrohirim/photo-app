@@ -1,6 +1,6 @@
 
 .title > h2, .title > p{
-  color: var(--primary);
+  color: var(--primary-dark);
   text-align: center;
 }
 .title > h2{

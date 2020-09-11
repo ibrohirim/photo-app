@@ -10,7 +10,6 @@ const Title = () => {
   return (
     <div className="title">
       <h2>{user.displayName}</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   )
 }
