@@ -1,6 +1,10 @@
+
+
+Check out a demo hosted here https://ibrohirim.github.io/photo-app/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-https://ibrohirim.github.io/photo-app/
 
 ## Available Scripts
 
