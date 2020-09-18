@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/photo-app/static/css/main.c331d19d.chunk.css",
+    "main.css": "/photo-app/static/css/main.8209d069.chunk.css",
     "main.js": "/photo-app/static/js/main.4dad1e5b.chunk.js",
     "main.js.map": "/photo-app/static/js/main.4dad1e5b.chunk.js.map",
     "runtime-main.js": "/photo-app/static/js/runtime-main.efc72e9c.js",
@@ -8,15 +8,15 @@
     "static/js/2.a550a5e0.chunk.js": "/photo-app/static/js/2.a550a5e0.chunk.js",
     "static/js/2.a550a5e0.chunk.js.map": "/photo-app/static/js/2.a550a5e0.chunk.js.map",
     "index.html": "/photo-app/index.html",
-    "precache-manifest.7805cc452b0187efa690aeb535645d7a.js": "/photo-app/precache-manifest.7805cc452b0187efa690aeb535645d7a.js",
+    "precache-manifest.e75db03d27c239267fe5c2b6e9f722b6.js": "/photo-app/precache-manifest.e75db03d27c239267fe5c2b6e9f722b6.js",
     "service-worker.js": "/photo-app/service-worker.js",
-    "static/css/main.c331d19d.chunk.css.map": "/photo-app/static/css/main.c331d19d.chunk.css.map",
+    "static/css/main.8209d069.chunk.css.map": "/photo-app/static/css/main.8209d069.chunk.css.map",
     "static/js/2.a550a5e0.chunk.js.LICENSE.txt": "/photo-app/static/js/2.a550a5e0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.efc72e9c.js",
     "static/js/2.a550a5e0.chunk.js",
-    "static/css/main.c331d19d.chunk.css",
+    "static/css/main.8209d069.chunk.css",
     "static/js/main.4dad1e5b.chunk.js"
   ]
 }
